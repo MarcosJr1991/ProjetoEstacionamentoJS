@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="_css/style.css">  
+</head>
+<body>
+    <div> <!--Parte de entrada-->
+        <input type="text" id="name" placeholder="Nome do veículo" autocomplete="off">
+        <input type="text" id="licence" placeholder="Placa do veículo" autocomplete="off">
+        <button id="send" class="success">Registrar</button><!--BOTÃO RESPONSAVEL POR REGISTRAR O VEICULO-->
+    </div>
+    <table> <!--TABLE SERA RESPONSAVEL POR CADASTRAR OS CARROS-->
+        <thead> <!--CABEÇARIO-->
+            <tr> <!--TR COMO LINHA-->
+                <th>Veículo</th> <!-- TH TITULO DA TABELA-->
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <!--TBODY FICAR RESPONSAVEL POR FAZER O CORPO DOS CARROS POREM O JAVASCRIPT ATRAVES DA MANIPULAÇÃO DO DOM ATRAVES DO ID-->
+        <tbody id="garage"></tbody> 
+    </table>
+</body>
+
+<script src="_js/main.js"></script>
+</html>
